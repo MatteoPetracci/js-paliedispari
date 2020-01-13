@@ -13,6 +13,7 @@ var numRandom = Math.floor(Math.random() * 5) + 1;
 var somma = numRandom + numeroUtente;
 
 var risultatoFinale = false;
+console.log(pariDispari);
 console.log(numeroUtente);
 console.log(numRandom);
 console.log(somma);
@@ -24,7 +25,6 @@ if (somma % 2 == 0 ) {
 }
 
 console.log(risultatoFinale);
-
 
 if (pariDispari == 'pari' && risultatoFinale == true) {
   console.log('Hai vinto');

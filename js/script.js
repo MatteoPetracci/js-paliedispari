@@ -39,6 +39,36 @@
 //   console.log('Questa parola non è polindroma');
 // }
 
+// ***********************************************************
+
+// PRIMA FUNZIONE
+
+// var parolaUtente = prompt('Inserisci una parola');
+//
+//
+// function polindroma(parola) {
+//   var split = parolaUtente.split('');
+//   var reverse = split.reverse();
+//   var join = reverse.join('');
+//   if(parolaUtente == join) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+//
+//
+// var polindromaParola = polindroma(parolaUtente);
+//
+// if (polindromaParola == true) {
+//   console.log('Questa parola è polindroma');
+// } else {
+//   console.log('Questa parola non è polidroma');
+// }
+
+// *************************************************************
+
+// SECONDA FUNZIONE
 
 var parolaUtente = prompt('Inserisci una parola');
 
@@ -47,17 +77,14 @@ function polindroma(parola) {
   var split = parolaUtente.split('');
   var reverse = split.reverse();
   var join = reverse.join('');
-  if(parolaUtente == join) {
-    return true;
-  } else {
-    return false;
-  }
+  return join;
 }
 
-var polindromaParola = polindroma(parolaUtente);
+var parolaPolindroma = polindroma(parolaUtente);
 
-if (polindromaParola == true) {
-   console.log('Questa parola è polindroma');
+
+if (parolaPolindroma == parolaUtente) {
+  console.log('Questa parola è polindroma');
 } else {
-  console.log('Questa parola non è polidroma');
+  console.log('Questa parola non è polindroma');
 }
